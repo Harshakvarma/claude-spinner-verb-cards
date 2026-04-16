@@ -27,7 +27,7 @@ function renderCards(list) {
         <span class="terminal-dot dot-green"></span>
       </div>
       <div class="terminal-card-body">
-        <h3 class="terminal-title">${item.verb}</h3>
+        <h3 class="terminal-title">${item.verb}...</h3>
         <div class="terminal-meta">
           <p class="card-meaning">${item.meaning}</p>
           <p class="card-example">${item.example}</p>
@@ -52,9 +52,9 @@ function filterVerbs(query) {
 
   return verbs.filter((item) => {
     return (
-      normalizeText(item.verb).includes(normalized) ||
-      normalizeText(item.meaning).includes(normalized) ||
-      normalizeText(item.example).includes(normalized)
+      normalizeText(item.verb).includes(normalized) 
+      // || normalizeText(item.meaning).includes(normalized) 
+      // || normalizeText(item.example).includes(normalized)
     );
   });
 }
