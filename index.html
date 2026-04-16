@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Claude Verb Spinner</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="top-panel">
+        <div class="terminal-window">
+          <div class="terminal-header">
+            <span class="terminal-dot dot-red"></span>
+            <span class="terminal-dot dot-yellow"></span>
+            <span class="terminal-dot dot-green"></span>
+          </div>
+
+          <div class="terminal-body">
+            <p class="terminal-label">SPINNER VERB</p>
+            <h1 class="terminal-title">Claude Code Spinner</h1>
+            <div class="terminal-meta">
+              <p>• 187 verbs that show all words</p>
+              <p>• meaning and examples of usage</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="search-block">
+          <label class="search-card" for="searchInput">
+            <span class="search-keynote">A–Z</span>
+            <input
+              id="searchInput"
+              type="search"
+              placeholder="Search by directly typing, ESC to clear"
+              aria-label="Search verbs"
+              autocomplete="off"
+            />
+          </label>
+        </div>
+      </section>
+
+      <section class="cards-section">
+        <div class="section-header">
+          <div>
+            <h2>Verb cards</h2>
+            <p class="section-copy">A searchable list of verbs with their meanings and example sentences.</p>
+          </div>
+          <p id="resultCount" class="result-count"></p>
+        </div>
+
+        <div class="cards-grid" id="cardsGrid"></div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
